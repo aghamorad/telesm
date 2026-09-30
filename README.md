@@ -1,4 +1,4 @@
-# Telesm
+# Telesm: Location Spoofer
 
 A tiny native macOS app that puts a connected iPhone's GPS somewhere else, with one button per place.
 

@@ -6,7 +6,7 @@ struct TelesmApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) private var delegate
 
     var body: some Scene {
-        WindowGroup("Telesm") {
+        WindowGroup("Telesm: Location Spoofer") {
             ContentView()
         }
         .windowResizability(.contentSize)

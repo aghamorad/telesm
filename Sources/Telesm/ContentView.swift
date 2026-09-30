@@ -94,7 +94,7 @@ struct ContentView: View {
     private var header: some View {
         VStack(alignment: .leading, spacing: 3) {
             Text("Telesm").font(.system(size: 21, weight: .semibold))
-            Text("A talisman that puts your iPhone somewhere else.")
+            Text("A location spoofer — a talisman that puts your iPhone somewhere else.")
                 .font(.callout)
                 .foregroundStyle(.secondary)
         }
