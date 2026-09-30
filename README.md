@@ -34,7 +34,7 @@ The app looks for the binary at `~/.local/bin`, then `/opt/homebrew/bin`, then `
 
 Produces `dist/Telesm.app`. It is ad-hoc signed, so the first launch may need a right-click → Open.
 
-The icon is drawn in code — an aged brass amulet on ink — by `scripts/DrawIcon.swift`, assembled into `Resources/AppIcon.icns` by `scripts/make_icon.sh`. Change a colour there and rebuild rather than shipping a binary asset nobody can edit.
+The icon master is `Resources/AppIconSource.png`. `scripts/make_icon.sh` writes `Resources/AppIcon.icns` from it: `prepare_icon.swift` crops to the artwork's solid bounds, scales it to fill the full 1024 canvas, and backs the corners with the artwork's own border colour. The icon has to be full-bleed and fully opaque — macOS draws a pale plinth behind anything with transparent edges, which leaves the artwork looking like a small square inside a bigger one. Replace the source and re-run to change the icon; pass another file as the first argument to try one out.
 
 ## Adding a place
 
